@@ -9,9 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     
     <style>
-        /* ========================================================= */
-        /* CSS CHO HIỆU ỨNG SPLASH SCREEN (VIDEO) - START */
-        /* ========================================================= */
+        
         .splash-overlay {
             position: fixed;
             top: 0;
@@ -46,10 +44,7 @@
             left: 0;
             z-index: 10;
         }
-        /* ========================================================= */
-        /* CSS CHO HIỆU ỨNG SPLASH SCREEN (VIDEO) - END */
-        /* ========================================================= */
-        
+       
         body {
             font-family: 'Noto Sans', sans-serif, Arial, sans-serif;
             /* Cập nhật hình nền Arsenal */
@@ -59,7 +54,7 @@
             background-position: center;
         }
         
-        /* Tinh chỉnh lại container để nổi bật trên nền hình ảnh */
+      
         .formula-container {
             /* Tăng blur và giảm sáng để nội dung chính dễ đọc hơn trên nền ảnh động */
             backdrop-filter: blur(10px) brightness(50%);
@@ -70,7 +65,7 @@
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
             border: 2px solid rgba(255, 255, 255, 0.15);
             
-             /* Viền sáng nhẹ */
+            
         }
         h1, h2, h3, h4 {
             color: #F87171; /* Màu đỏ tươi (tông màu Arsenal) cho tiêu đề */
@@ -85,7 +80,7 @@
             padding-bottom: 0.5rem;
             margin-bottom: 1.5rem;
         }
-        /* Style cho công thức toán học */
+       
         .formula {
             display: block;
             margin-top: 0.5rem;
@@ -97,7 +92,7 @@
             color: #A7F3D0; /* Màu xanh Mint nổi bật */
             border: 1px dashed rgba(253, 211, 77, 0.5); /* Viền vàng Arsenal nhạt */
         }
-        /* Đảm bảo chữ trong công thức cũng dùng font Noto Sans nếu MathJax không có font riêng */
+        /
         .formula * {
              font-family: 'Noto Sans', sans-serif, Arial, sans-serif !important; 
         }
@@ -110,7 +105,7 @@
             color: #FEE2E2;
         }
         
-        /* CÁC CLASS CHO PHẦN CỐ ĐỊNH DƯỚI GÓC TRANG */
+        
         .design-by-container, .contact-links-container {
             position: fixed;
             bottom: 0;
@@ -140,7 +135,7 @@
             align-items: center;
         }
 
-        /* Định nghĩa màu sắc cụ thể cho liên kết */
+       
         .phone-link { --link-color: #34D399; --hover-bg: rgba(52, 211, 153, 0.2); }
         .instagram-link { --link-color: #EC4899; --hover-bg: rgba(236, 72, 153, 0.2); }
         .facebook-link { --link-color: #60A5FA; --hover-bg: rgba(96, 165, 250, 0.2); }
@@ -173,7 +168,7 @@
             fill: #ffffff;
         }
         
-        /* Điều chỉnh cho thiết bị di động */
+       
         @media (max-width: 639px) {
             .design-by-container, .contact-links-container {
                 padding: 0.5rem;
@@ -190,9 +185,7 @@
 </head>
 <body class="p-4 sm:p-8 pb-32"> <!-- Padding bottom để nội dung không bị che -->
     
-    <!-- ========================================================= -->
-    <!-- SPLASH SCREEN OVERLAY (VIDEO) - START (Ngay sau thẻ <body>) -->
-    <!-- ========================================================= -->
+  
     <div id="splashOverlay" class="splash-overlay">
         <!-- Video thay thế cho logo Netflix -->
         <video id="splashVideo" class="splash-video" preload="auto" muted autoplay playsinline>
@@ -432,19 +425,19 @@
         </div>
     </div>
     
-    <!-- KHỐI GÓC DƯỚI BÊN TRÁI: Design by Sơn Cris -->
+  
     <div class="design-by-container">
         <p class="design-by-text">
             Design by <b>Sơn Cris</b>
         </p>
     </div>
 
-    <!-- KHỐI GÓC DƯỚI BÊN PHẢI: 3 thông tin liên hệ theo hàng ngang -->
+   
     <div class="contact-links-container">
         
         <!-- Phone Link (Xanh Green) -->
         <a href="tel:0327208690" title="Gọi 0327208690" class="footer-link phone-link">
-            <!-- Icon Điện thoại -->
+           
             <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-48 0-87.1 39.1-87.1 87.1v278.7c0 48 39.1 87.1 87.1 87.1h182.2c48 0 87.1-39.1 87.1-87.1V111.7c0-48-39.1-87.1-87.1-87.1H164.9zM256 464c-15.4 0-27.9-12.5-27.9-27.9s12.5-27.9 27.9-27.9 27.9 12.5 27.9 27.9-12.5 27.9-27.9 27.9zm135.2-348.8H122.9V392h268.3V115.2z"/></svg>
             0327208690
         </a>
@@ -466,8 +459,7 @@
 
 <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>
-        // Thiết lập MathJax để sử dụng cú pháp LaTeX inline ($...$) và display ($$...$$)
-        // Đây là bước quan trọng để công thức hiển thị đúng.
+       
         window.MathJax = {
             tex: {
                 inlineMath: [['$', '$'], ['\\(', '\\)']],
@@ -529,4 +521,5 @@
     <!-- JAVASCRIPT ĐỂ ẨN SPLASH SCREEN - END -->
     <!-- ========================================================= -->
 </body>
+
 </html>
